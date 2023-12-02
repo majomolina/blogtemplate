@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wgh@300&display=swap');
 
-.a {
-    text-decoration: none;
-    color: black;
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+
+.card_container{
+  width: 50%;
+  border: 1px solid black;
 }
 
 /* column1*/
@@ -18,6 +29,8 @@
     border-width: 1px;
     border-style: solid;
     border-color: black;
+    border-bottom: none;
+    border-top: none;
     flex-wrap: wrap;
 }
 .card_column1{
@@ -30,21 +43,22 @@
 .column2{
     width: 40%;
     border-width: 1px;
-    border-style: solid;
+    border-style: none;
     border-color: black;
     flex-wrap: wrap;
 }
 
 .image_profile{
-    height: 250px;
+    height: 160px;
     display: flex;
     align-items: center;
     margin-left: 20%;
+    border: 1px solid;
 }
 
   
   .grid_container{
-    width: 40%;
+    width: 60%;
     margin:auto;
     display: grid;
     grid-template-columns: auto auto;
@@ -55,11 +69,37 @@
 
   .collage_column2{
     height: 110px;
-    width: 110px;
+    width: 150px;
     border: none;
   }
   .icons_column2{
     height: 30px;
-    
+
 }
-  
+
+/* message section*/
+.message_section {
+  background: color(white);
+  color: white;
+  height: 800px;
+  width: 100%;
+  margin: auto;
+}
+
+.message_icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* footer*/
+.footer {
+ background-color:lightgray;
+  color: black;
+  height: 80px;
+  width: 100%;
+  margin: auto;
+}
