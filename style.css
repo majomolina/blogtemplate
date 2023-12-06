@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wgh@300&display=swap');
+
 
 
 input[type=text] {
@@ -8,6 +8,18 @@ input[type=text] {
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid black;
+}
+
+
+
+
+
+
+.letter_links{
+  text-decoration: none;
+  color: grey;
+  font-size: small;
+
 }
 
 
@@ -49,11 +61,13 @@ input[type=text] {
 }
 
 .image_profile{
-    height: 160px;
+    height: 200px;
+    width: 330px;
     display: flex;
     align-items: center;
     margin-left: 20%;
     border: 1px solid;
+    margin-top: 30px;
 }
 
   
@@ -76,6 +90,43 @@ input[type=text] {
     height: 30px;
 
 }
+
+.grid_container {
+ 
+   
+  & a:hover {
+   text-decoration: none;
+
+    & div {
+      display: block;
+      color:white;
+      width: 150px;
+      text-align: center;
+      height: 110px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 15px;
+    
+  
+ 
+    }   
+
+    & img{
+      z-index: -1;
+      position: absolute;
+      filter: brightness(50%);
+    }
+
+  }
+
+  & a {
+     & div {
+      display: none;
+    }   
+    
+  }
+}
+
 
 /* message section*/
 .message_section {
